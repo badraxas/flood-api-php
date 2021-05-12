@@ -8,8 +8,6 @@ use Badraxas\FloodApi\User;
 require_once 'vendor/autoload.php';
 
 $FloodApi = new \Badraxas\FloodApi\Api('http://localhost:3000/api/');
-var_dump($FloodApi->Auth->authenticate('bastien', 'bast62'));
-var_dump($FloodApi->Auth->users());
-var_dump($FloodApi->Auth->update('juju', new User('Justin', 'gugu', new rTorrent('./socket.socket'))));
+$FloodApi->Auth->register(new User('bastien', 'bastien', new rTorrent('./socket.socket'), Right::ADMINISTRATOR), true);
 var_dump($FloodApi->Auth->users());
 
