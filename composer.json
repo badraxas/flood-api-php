@@ -1,0 +1,13 @@
+{
+    "name": "badraxas/flood-api-php",
+    "description": "PHP Library to manage your seedbox",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Badraxas\\FloodApi\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    }
+}
